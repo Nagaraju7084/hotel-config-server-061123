@@ -3,4 +3,11 @@ server:
 
 spring:
   application:
-    name: config-server
+    name: CONFIG-SERVER
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Nagaraju7084/config_repo
+          clone-on-start: true
